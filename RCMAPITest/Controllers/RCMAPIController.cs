@@ -49,11 +49,10 @@ namespace RCMAPITest.Controllers
             ClaimResponse obj = new ClaimResponse();
             obj.Date= DateTime.Now;
             obj.Description = "Success";
-<<<<<<< HEAD
+ 
             obj.id = 100;
-=======
-            obj.id = 1;
->>>>>>> parent of e22ed6e (changes 11jan)
+ 
+       
 
             string output =   "Welcome to the User";
 
