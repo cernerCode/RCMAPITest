@@ -49,7 +49,7 @@ namespace RCMAPITest.Controllers
             ClaimResponse obj = new ClaimResponse();
             obj.Date= DateTime.Now;
             obj.Description = "Success";
-            obj.id = 10;
+            obj.id = 100;
 
             string output =   "Welcome to the User";
 
