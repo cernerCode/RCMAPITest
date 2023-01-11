@@ -50,7 +50,7 @@ namespace RCMAPITest.Controllers
             obj.Date= DateTime.Now;
             obj.Description = "Success";
  
-            obj.id = 100;
+            obj.id = 1;
  
        
 
