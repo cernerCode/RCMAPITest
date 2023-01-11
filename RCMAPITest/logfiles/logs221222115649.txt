@@ -1,0 +1,61 @@
+
+Json claim posted 22/12/2022 11:51:01 AM JSON :{
+  "Submission": {
+    "Header": {
+      "SenderID": "SENDER",
+      "ReceiverID": "SENDER",
+      "TransactionDate": "08/12/2022 14:13",
+      "RecordCount": "1",
+      "DispositionFlag": "PRODUCTION",
+      "PayerID": "PayerID"
+    },
+    "Claim": [
+      {
+        "ID": "405170",
+        "Type": "Submission",
+        "MemberID": "1234567",
+        "ProviderID": "Cerner",
+        "NationalIDNumber": "784200638715795",
+        "Gender": "Male",
+        "DateOfBirth": "06/10/1987 00:00",
+        "Gross": "50",
+        "PatientShare": "0",
+        "Net": "50",
+        "Encounter": {
+          "FacilityID": "7425",
+          "Type": "2",
+          "PatientID": "621809",
+          "Start": "31/10/2022 13:13",
+          "End": "24/11/2022 18:26",
+          "StartType": "1"
+        },
+        "Diagnosis": [
+          {
+            "Type": "Principal",
+            "Code": "R50.9",
+            "DxInfo": [
+              {
+                "Type": "POA",
+                "Code": "N"
+              }
+            ]
+          }
+        ],
+        "Activity": [
+          {
+            "ID": "1637137667",
+            "Start": "31/10/2022 13:27",
+            "Type": "3",
+            "Code": "85025",
+            "Location": "",
+            "Quantity": "1",
+            "Net": "50.00",
+            "Clinician": "D21083",
+            "PriorAuthorizationID": "",
+            "PatientShare": "0.00"
+          }
+        ]
+      }
+    ]
+  }
+}

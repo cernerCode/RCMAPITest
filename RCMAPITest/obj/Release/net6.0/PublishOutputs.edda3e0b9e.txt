@@ -1,0 +1,11 @@
+C:\Users\Muhammad Aamir\source\repos\RCMAPITest\RCMAPITest\obj\Release\net6.0\PubTmp\Out\RCMAPITest.exe
+C:\Users\Muhammad Aamir\source\repos\RCMAPITest\RCMAPITest\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\Muhammad Aamir\source\repos\RCMAPITest\RCMAPITest\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\Muhammad Aamir\source\repos\RCMAPITest\RCMAPITest\obj\Release\net6.0\PubTmp\Out\RCMAPITest.dll
+C:\Users\Muhammad Aamir\source\repos\RCMAPITest\RCMAPITest\obj\Release\net6.0\PubTmp\Out\RCMAPITest.deps.json
+C:\Users\Muhammad Aamir\source\repos\RCMAPITest\RCMAPITest\obj\Release\net6.0\PubTmp\Out\RCMAPITest.runtimeconfig.json
+C:\Users\Muhammad Aamir\source\repos\RCMAPITest\RCMAPITest\obj\Release\net6.0\PubTmp\Out\RCMAPITest.pdb
+C:\Users\Muhammad Aamir\source\repos\RCMAPITest\RCMAPITest\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\Muhammad Aamir\source\repos\RCMAPITest\RCMAPITest\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Muhammad Aamir\source\repos\RCMAPITest\RCMAPITest\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Muhammad Aamir\source\repos\RCMAPITest\RCMAPITest\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

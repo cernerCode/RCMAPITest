@@ -1,0 +1,371 @@
+
+Json claim response 22/12/2022 11:56:34 AM  :{
+  "StatusCode": 400,
+  "Message": "Request validation Error.",
+  "Success": false,
+  "UserMessage": "Request validation Error.",
+  "Error": [
+    {
+      "AdditionalReference": "405170",
+      "AdditionalReferenceObjectName": "Claim",
+      "Reference": "405170",
+      "ReferenceObjectName": "Claim",
+      "ErrorText": "Invalid NationalIDNumber, National ID Number must be in the following pattern  = [0-9]{3}-[0-9]{4}-[0-9]{7}-[0-9]{1}",
+      "ObjectName": "NationalIDNumber",
+      "Transaction": "Request validation"
+    }
+  ]
+}
+Json Elig posted 26/12/2022 1:01:10 PM JSON :{"PriorRequest":{"Header":{"SenderID":"Cerner","ReceiverID":"MohapTPA003","TransactionDate":"12\/12\/2022 17:29","RecordCount":1,"DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Authorization":{"Type":"Eligibility","ID":"63364090","RequestType":"New","Gender":"Male","MemberID":"9883838999","EmiratesIDNumber":"000-0880-0000000-0","DateOrdered":"12\/12\/2022 17:29","DateOfBirth":"15\/09\/2006 00:00","Encounter":{"FacilityID":"Cerner","Type":1}}}}
+Json elig response 26/12/2022 1:01:12 PM  :{
+  "StatusCode": 400,
+  "Message": "Error while validating entity",
+  "Success": false,
+  "UserMessage": "Error while validating entity,Please see the list of errors and fix them",
+  "Error": [
+    {
+      "PropertyName": "TransactionDate",
+      "RuleCode": "VR0003",
+      "ErrorText": "Header TransactionDate must be equal to the current date, Please fix TransactionDate to be equal to the current date.",
+      "Transaction": "Request"
+    },
+    {
+      "PropertyName": "SenderId",
+      "RuleCode": "VR0006",
+      "ErrorText": "Header SenderId must have the license number of the user logged into PostOffice, Please fix SenderId to be the license number of the user logged into PostOffice.",
+      "Transaction": "Request"
+    }
+  ]
+}
+Json Elig posted 26/12/2022 1:48:43 PM JSON :{"PriorRequest":{"Header":{"SenderID":"Cerner","ReceiverID":"MohapTPA003","TransactionDate":"12\/12\/2022 17:29","RecordCount":1,"DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Authorization":{"Type":"Eligibility","ID":"63364090","RequestType":"New","Gender":"Male","MemberID":"9883838999","EmiratesIDNumber":"000-0880-0000000-0","DateOrdered":"12\/12\/2022 17:29","DateOfBirth":"15\/09\/2006 00:00","Encounter":{"FacilityID":"Cerner","Type":1}}}}
+Json elig response 26/12/2022 1:48:44 PM  :{
+  "StatusCode": 400,
+  "Message": "Error while validating entity",
+  "Success": false,
+  "UserMessage": "Error while validating entity,Please see the list of errors and fix them",
+  "Error": [
+    {
+      "PropertyName": "TransactionDate",
+      "RuleCode": "VR0003",
+      "ErrorText": "Header TransactionDate must be equal to the current date, Please fix TransactionDate to be equal to the current date.",
+      "Transaction": "Request"
+    },
+    {
+      "PropertyName": "SenderId",
+      "RuleCode": "VR0006",
+      "ErrorText": "Header SenderId must have the license number of the user logged into PostOffice, Please fix SenderId to be the license number of the user logged into PostOffice.",
+      "Transaction": "Request"
+    }
+  ]
+}
+Json Elig posted 26/12/2022 2:41:33 PM JSON :{"PriorRequest":{"Header":{"SenderID":"Cerner","ReceiverID":"MohapTPA003","TransactionDate":"12\/12\/2022 17:29","RecordCount":1,"DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Authorization":{"Type":"Eligibility","ID":"63364090","RequestType":"New","Gender":"Male","MemberID":"9883838999","EmiratesIDNumber":"000-0880-0000000-0","DateOrdered":"12\/12\/2022 17:29","DateOfBirth":"15\/09\/2006 00:00","Encounter":{"FacilityID":"Cerner","Type":1}}}}
+Json Elig posted 26/12/2022 2:47:55 PM JSON :{"PriorRequest":{"Header":{"SenderID":"Cerner","ReceiverID":"MohapTPA003","TransactionDate":"12\/12\/2022 17:29","RecordCount":1,"DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Authorization":{"Type":"Eligibility","ID":"63364090","RequestType":"New","Gender":"Male","MemberID":"9883838999","EmiratesIDNumber":"000-0880-0000000-0","DateOrdered":"12\/12\/2022 17:29","DateOfBirth":"15\/09\/2006 00:00","Encounter":{"FacilityID":"Cerner","Type":1}}}}
+API hit start Elig
+API hit start Elig
+Elig Error: Cannot perform runtime binding on a null reference
+API hit start Claim
+Json claim posted 27/12/2022 1:46:53 PM JSON :{"Submission":{"Header":{"SenderID":"GRP331","ReceiverID":"MohapTPA003","TransactionDate":"26/12/2022 15:51","RecordCount":"1","DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Claim":[{"ID":"47751531","Type":"Submission","MemberID":"1234567","ProviderID":"GRP331","NationalIDNumber":"784-2015-3575821-9","Gender":"Female","DateOfBirth":"01/01/2001 00:00","Gross":"168","PatientShare":"10","Net":"158","Encounter":{"FacilityID":"7405","Type":"3","PatientID":"621840","Start":"22/12/2022 09:54","End":"23/12/2022 16:14","StartType":"3","EndType":"1","TransferSource":"DHA-F-0047967"},"Diagnosis":[{"Type":"Principal","Code":"J06.9","DxInfo":[{"Type":"POA","Code": "N"}]}],"Activity":[{"ID":"1637589662","Start":"22/12/2022 09:58","Type":"8","Code":"63.02","Location":"","Quantity":"1","Net":"90.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"10.00"},{"ID":"1637675675","Start":"22/12/2022 10:00","Type":"3","Code":"85025","Location":"","Quantity":"1","Net":"68.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"0.00"}]}]}}
+Json claim response 27/12/2022 1:46:53 PM  :{
+  "StatusCode": 400,
+  "Message": "Error while validating entity",
+  "Success": false,
+  "UserMessage": "Error while validating entity,Please see the list of errors and fix them",
+  "Error": [
+    {
+      "PropertyName": "TransactionDate",
+      "RuleCode": "VR0003",
+      "ErrorText": "Header TransactionDate must be equal to the current date, Please fix TransactionDate to be equal to the current date.",
+      "Transaction": "Submission"
+    },
+    {
+      "AdditionalReference": "47751531",
+      "AdditionalReferenceObjectName": "Claim",
+      "Reference": "47751531",
+      "ReferenceObjectName": "Claim",
+      "PropertyName": "TransferDestination",
+      "RuleCode": "VR0262",
+      "ErrorText": "Claim Encounter Transfer Destination value is required when EncounterStartType = 3 Transfer),  ",
+      "ObjectName": "Claim",
+      "Transaction": "Submission"
+    }
+  ]
+}
+Claim Error: Cannot add value because header 'Authorization' does not support multiple values.
+API hit start Claim
+Json claim posted 27/12/2022 1:47:43 PM JSON :{"Submission":{"Header":{"SenderID":"GRP331","ReceiverID":"MohapTPA003","TransactionDate":"26/12/2022 15:51","RecordCount":"1","DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Claim":[{"ID":"47751531","Type":"Submission","MemberID":"1234567","ProviderID":"GRP331","NationalIDNumber":"784-2015-3575821-9","Gender":"Female","DateOfBirth":"01/01/2001 00:00","Gross":"168","PatientShare":"10","Net":"158","Encounter":{"FacilityID":"7405","Type":"3","PatientID":"621840","Start":"22/12/2022 09:54","End":"23/12/2022 16:14","StartType":"3","EndType":"1","TransferSource":"DHA-F-0047967"},"Diagnosis":[{"Type":"Principal","Code":"J06.9","DxInfo":[{"Type":"POA","Code": "N"}]}],"Activity":[{"ID":"1637589662","Start":"22/12/2022 09:58","Type":"8","Code":"63.02","Location":"","Quantity":"1","Net":"90.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"10.00"},{"ID":"1637675675","Start":"22/12/2022 10:00","Type":"3","Code":"85025","Location":"","Quantity":"1","Net":"68.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"0.00"}]}]}}
+Json claim response 27/12/2022 1:59:52 PM  :{
+  "StatusCode": 400,
+  "Message": "Error while validating entity",
+  "Success": false,
+  "UserMessage": "Error while validating entity,Please see the list of errors and fix them",
+  "Error": [
+    {
+      "PropertyName": "TransactionDate",
+      "RuleCode": "VR0003",
+      "ErrorText": "Header TransactionDate must be equal to the current date, Please fix TransactionDate to be equal to the current date.",
+      "Transaction": "Submission"
+    },
+    {
+      "AdditionalReference": "47751531",
+      "AdditionalReferenceObjectName": "Claim",
+      "Reference": "47751531",
+      "ReferenceObjectName": "Claim",
+      "PropertyName": "TransferDestination",
+      "RuleCode": "VR0262",
+      "ErrorText": "Claim Encounter Transfer Destination value is required when EncounterStartType = 3 Transfer),  ",
+      "ObjectName": "Claim",
+      "Transaction": "Submission"
+    }
+  ]
+}
+API hit start Claim
+Json claim posted 27/12/2022 2:04:19 PM JSON :{"Submission":{"Header":{"SenderID":"GRP331","ReceiverID":"MohapTPA003","TransactionDate":"26/12/2022 15:51","RecordCount":"1","DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Claim":[{"ID":"47751531","Type":"Submission","MemberID":"1234567","ProviderID":"GRP331","NationalIDNumber":"784-2015-3575821-9","Gender":"Female","DateOfBirth":"01/01/2001 00:00","Gross":"168","PatientShare":"10","Net":"158","Encounter":{"FacilityID":"7405","Type":"3","PatientID":"621840","Start":"22/12/2022 09:54","End":"23/12/2022 16:14","StartType":"3","EndType":"1","TransferSource":"DHA-F-0047967"},"Diagnosis":[{"Type":"Principal","Code":"J06.9","DxInfo":[{"Type":"POA","Code": "N"}]}],"Activity":[{"ID":"1637589662","Start":"22/12/2022 09:58","Type":"8","Code":"63.02","Location":"","Quantity":"1","Net":"90.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"10.00"},{"ID":"1637675675","Start":"22/12/2022 10:00","Type":"3","Code":"85025","Location":"","Quantity":"1","Net":"68.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"0.00"}]}]}}
+Json claim response 27/12/2022 2:04:20 PM  :{
+  "StatusCode": 400,
+  "Message": "Error while validating entity",
+  "Success": false,
+  "UserMessage": "Error while validating entity,Please see the list of errors and fix them",
+  "Error": [
+    {
+      "PropertyName": "TransactionDate",
+      "RuleCode": "VR0003",
+      "ErrorText": "Header TransactionDate must be equal to the current date, Please fix TransactionDate to be equal to the current date.",
+      "Transaction": "Submission"
+    },
+    {
+      "AdditionalReference": "47751531",
+      "AdditionalReferenceObjectName": "Claim",
+      "Reference": "47751531",
+      "ReferenceObjectName": "Claim",
+      "PropertyName": "TransferDestination",
+      "RuleCode": "VR0262",
+      "ErrorText": "Claim Encounter Transfer Destination value is required when EncounterStartType = 3 Transfer),  ",
+      "ObjectName": "Claim",
+      "Transaction": "Submission"
+    }
+  ]
+}
+API hit start Claim
+Json claim posted 27/12/2022 2:11:07 PM JSON :{"Submission":{"Header":{"SenderID":"GRP331","ReceiverID":"MohapTPA003","TransactionDate":"26/12/2022 15:51","RecordCount":"1","DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Claim":[{"ID":"47751531","Type":"Submission","MemberID":"1234567","ProviderID":"GRP331","NationalIDNumber":"784-2015-3575821-9","Gender":"Female","DateOfBirth":"01/01/2001 00:00","Gross":"168","PatientShare":"10","Net":"158","Encounter":{"FacilityID":"7405","Type":"3","PatientID":"621840","Start":"22/12/2022 09:54","End":"23/12/2022 16:14","StartType":"3","EndType":"1","TransferSource":"DHA-F-0047967"},"Diagnosis":[{"Type":"Principal","Code":"J06.9","DxInfo":[{"Type":"POA","Code": "N"}]}],"Activity":[{"ID":"1637589662","Start":"22/12/2022 09:58","Type":"8","Code":"63.02","Location":"","Quantity":"1","Net":"90.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"10.00"},{"ID":"1637675675","Start":"22/12/2022 10:00","Type":"3","Code":"85025","Location":"","Quantity":"1","Net":"68.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"0.00"}]}]}}
+Claim Error: 'Newtonsoft.Json.Linq.JArray' does not contain a definition for 'ID'
+API hit start Claim
+Json claim posted 27/12/2022 2:11:59 PM JSON :{"Submission":{"Header":{"SenderID":"GRP331","ReceiverID":"MohapTPA003","TransactionDate":"26/12/2022 15:51","RecordCount":"1","DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Claim":[{"ID":"47751531","Type":"Submission","MemberID":"1234567","ProviderID":"GRP331","NationalIDNumber":"784-2015-3575821-9","Gender":"Female","DateOfBirth":"01/01/2001 00:00","Gross":"168","PatientShare":"10","Net":"158","Encounter":{"FacilityID":"7405","Type":"3","PatientID":"621840","Start":"22/12/2022 09:54","End":"23/12/2022 16:14","StartType":"3","EndType":"1","TransferSource":"DHA-F-0047967"},"Diagnosis":[{"Type":"Principal","Code":"J06.9","DxInfo":[{"Type":"POA","Code": "N"}]}],"Activity":[{"ID":"1637589662","Start":"22/12/2022 09:58","Type":"8","Code":"63.02","Location":"","Quantity":"1","Net":"90.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"10.00"},{"ID":"1637675675","Start":"22/12/2022 10:00","Type":"3","Code":"85025","Location":"","Quantity":"1","Net":"68.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"0.00"}]}]}}
+Claim Error: 'Newtonsoft.Json.Linq.JArray' does not contain a definition for 'ID'
+API hit start Claim
+Json claim posted 27/12/2022 2:18:03 PM JSON :{"Submission":{"Header":{"SenderID":"GRP331","ReceiverID":"MOHAPTPA003","TransactionDate":"26/12/2022 15:51","RecordCount":"1","DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Claim":[{"ID":"47751531","Type":"Submission","MemberID":"1234567","ProviderID":"GRP331","NationalIDNumber":"784-2015-3575821-9","Gender":"Female","DateOfBirth":"01/01/2001 00:00","Gross":"168","PatientShare":"10","Net":"158","Encounter":{"FacilityID":"7405","Type":"3","PatientID":"621840","Start":"22/12/2022 09:54","End":"23/12/2022 16:14","StartType":"3","EndType":"1","TransferSource":"DHA-F-0047967"},"Diagnosis":[{"Type":"Principal","Code":"J06.9","DxInfo":[{"Type":"POA","Code": "N"}]}],"Activity":[{"ID":"1637589662","Start":"22/12/2022 09:58","Type":"8","Code":"63.02","Location":"","Quantity":"1","Net":"90.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"10.00"},{"ID":"1637675675","Start":"22/12/2022 10:00","Type":"3","Code":"85025","Location":"","Quantity":"1","Net":"68.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"0.00"}]}]}}
+Claim Error: 'Newtonsoft.Json.Linq.JArray' does not contain a definition for 'data'
+API hit start Claim
+Json claim posted 27/12/2022 2:24:57 PM JSON :{"Submission":{"Header":{"SenderID":"GRP331","ReceiverID":"MOHAPTPA003","TransactionDate":"26/12/2022 15:51","RecordCount":"1","DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Claim":[{"ID":"47751531","Type":"Submission","MemberID":"1234567","ProviderID":"GRP331","NationalIDNumber":"784-2015-3575821-9","Gender":"Female","DateOfBirth":"01/01/2001 00:00","Gross":"168","PatientShare":"10","Net":"158","Encounter":{"FacilityID":"7405","Type":"3","PatientID":"621840","Start":"22/12/2022 09:54","End":"23/12/2022 16:14","StartType":"3","EndType":"1","TransferSource":"DHA-F-0047967"},"Diagnosis":[{"Type":"Principal","Code":"J06.9","DxInfo":[{"Type":"POA","Code": "N"}]}],"Activity":[{"ID":"1637589662","Start":"22/12/2022 09:58","Type":"8","Code":"63.02","Location":"","Quantity":"1","Net":"90.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"10.00"},{"ID":"1637675675","Start":"22/12/2022 10:00","Type":"3","Code":"85025","Location":"","Quantity":"1","Net":"68.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"0.00"}]}]}}
+API hit start Claim
+Json claim posted 27/12/2022 2:30:24 PM JSON :{"Submission":{"Header":{"SenderID":"GRP331","ReceiverID":"MOHAPTPA003","TransactionDate":"26/12/2022 15:51","RecordCount":"1","DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Claim":[{"ID":"47751531","Type":"Submission","MemberID":"1234567","ProviderID":"GRP331","NationalIDNumber":"784-2015-3575821-9","Gender":"Female","DateOfBirth":"01/01/2001 00:00","Gross":"168","PatientShare":"10","Net":"158","Encounter":{"FacilityID":"7405","Type":"3","PatientID":"621840","Start":"22/12/2022 09:54","End":"23/12/2022 16:14","StartType":"3","EndType":"1","TransferSource":"DHA-F-0047967"},"Diagnosis":[{"Type":"Principal","Code":"J06.9","DxInfo":[{"Type":"POA","Code": "N"}]}],"Activity":[{"ID":"1637589662","Start":"22/12/2022 09:58","Type":"8","Code":"63.02","Location":"","Quantity":"1","Net":"90.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"10.00"},{"ID":"1637675675","Start":"22/12/2022 10:00","Type":"3","Code":"85025","Location":"","Quantity":"1","Net":"68.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"0.00"}]}]}}
+Claim Error: The given key was not present in the dictionary.
+API hit start Claim
+Json claim posted 27/12/2022 2:31:07 PM JSON :{"Submission":{"Header":{"SenderID":"GRP331","ReceiverID":"MOHAPTPA003","TransactionDate":"26/12/2022 15:51","RecordCount":"1","DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Claim":[{"ID":"47751531","Type":"Submission","MemberID":"1234567","ProviderID":"GRP331","NationalIDNumber":"784-2015-3575821-9","Gender":"Female","DateOfBirth":"01/01/2001 00:00","Gross":"168","PatientShare":"10","Net":"158","Encounter":{"FacilityID":"7405","Type":"3","PatientID":"621840","Start":"22/12/2022 09:54","End":"23/12/2022 16:14","StartType":"3","EndType":"1","TransferSource":"DHA-F-0047967"},"Diagnosis":[{"Type":"Principal","Code":"J06.9","DxInfo":[{"Type":"POA","Code": "N"}]}],"Activity":[{"ID":"1637589662","Start":"22/12/2022 09:58","Type":"8","Code":"63.02","Location":"","Quantity":"1","Net":"90.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"10.00"},{"ID":"1637675675","Start":"22/12/2022 10:00","Type":"3","Code":"85025","Location":"","Quantity":"1","Net":"68.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"0.00"}]}]}}
+Json claim response 27/12/2022 2:33:25 PM  :{
+  "StatusCode": 400,
+  "Message": "Error while validating entity",
+  "Success": false,
+  "UserMessage": "Error while validating entity,Please see the list of errors and fix them",
+  "Error": [
+    {
+      "PropertyName": "TransactionDate",
+      "RuleCode": "VR0003",
+      "ErrorText": "Header TransactionDate must be equal to the current date, Please fix TransactionDate to be equal to the current date.",
+      "Transaction": "Submission"
+    },
+    {
+      "AdditionalReference": "47751531",
+      "AdditionalReferenceObjectName": "Claim",
+      "Reference": "47751531",
+      "ReferenceObjectName": "Claim",
+      "PropertyName": "TransferDestination",
+      "RuleCode": "VR0262",
+      "ErrorText": "Claim Encounter Transfer Destination value is required when EncounterStartType = 3 Transfer),  ",
+      "ObjectName": "Claim",
+      "Transaction": "Submission"
+    }
+  ]
+}
+Claim Error: Cannot add value because header 'Authorization' does not support multiple values.
+API hit start Claim
+Json claim posted 27/12/2022 2:37:10 PM JSON :{"Submission":{"Header":{"SenderID":"GRP331","ReceiverID":"MOHAPTPA003","TransactionDate":"26/12/2022 15:51","RecordCount":"1","DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Claim":[{"ID":"47751531","Type":"Submission","MemberID":"1234567","ProviderID":"GRP331","NationalIDNumber":"784-2015-3575821-9","Gender":"Female","DateOfBirth":"01/01/2001 00:00","Gross":"168","PatientShare":"10","Net":"158","Encounter":{"FacilityID":"7405","Type":"3","PatientID":"621840","Start":"22/12/2022 09:54","End":"23/12/2022 16:14","StartType":"3","EndType":"1","TransferSource":"DHA-F-0047967"},"Diagnosis":[{"Type":"Principal","Code":"J06.9","DxInfo":[{"Type":"POA","Code": "N"}]}],"Activity":[{"ID":"1637589662","Start":"22/12/2022 09:58","Type":"8","Code":"63.02","Location":"","Quantity":"1","Net":"90.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"10.00"},{"ID":"1637675675","Start":"22/12/2022 10:00","Type":"3","Code":"85025","Location":"","Quantity":"1","Net":"68.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"0.00"}]}]}}
+Json claim response 27/12/2022 2:37:13 PM  :{
+  "StatusCode": 400,
+  "Message": "Error while validating entity",
+  "Success": false,
+  "UserMessage": "Error while validating entity,Please see the list of errors and fix them",
+  "Error": [
+    {
+      "PropertyName": "TransactionDate",
+      "RuleCode": "VR0003",
+      "ErrorText": "Header TransactionDate must be equal to the current date, Please fix TransactionDate to be equal to the current date.",
+      "Transaction": "Submission"
+    },
+    {
+      "AdditionalReference": "47751531",
+      "AdditionalReferenceObjectName": "Claim",
+      "Reference": "47751531",
+      "ReferenceObjectName": "Claim",
+      "PropertyName": "TransferDestination",
+      "RuleCode": "VR0262",
+      "ErrorText": "Claim Encounter Transfer Destination value is required when EncounterStartType = 3 Transfer),  ",
+      "ObjectName": "Claim",
+      "Transaction": "Submission"
+    }
+  ]
+}
+API hit start Claim
+Json claim posted 27/12/2022 2:39:47 PM JSON :{"Submission":{"Header":{"SenderID":"GRP331","ReceiverID":"MOHAPTPA003","TransactionDate":"26/12/2022 15:51","RecordCount":"1","DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Claim":[{"ID":"47751531","Type":"Submission","MemberID":"1234567","ProviderID":"GRP331","NationalIDNumber":"784-2015-3575821-9","Gender":"Female","DateOfBirth":"01/01/2001 00:00","Gross":"168","PatientShare":"10","Net":"158","Encounter":{"FacilityID":"7405","Type":"3","PatientID":"621840","Start":"22/12/2022 09:54","End":"23/12/2022 16:14","StartType":"3","EndType":"1","TransferSource":"DHA-F-0047967"},"Diagnosis":[{"Type":"Principal","Code":"J06.9","DxInfo":[{"Type":"POA","Code": "N"}]}],"Activity":[{"ID":"1637589662","Start":"22/12/2022 09:58","Type":"8","Code":"63.02","Location":"","Quantity":"1","Net":"90.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"10.00"},{"ID":"1637675675","Start":"22/12/2022 10:00","Type":"3","Code":"85025","Location":"","Quantity":"1","Net":"68.00","Clinician":"D21083","PriorAuthorizationID":"12345","PatientShare":"0.00"}]}]}}
+Json claim response 27/12/2022 2:40:02 PM  :{
+  "StatusCode": 400,
+  "Message": "Error while validating entity",
+  "Success": false,
+  "UserMessage": "Error while validating entity,Please see the list of errors and fix them",
+  "Error": [
+    {
+      "PropertyName": "TransactionDate",
+      "RuleCode": "VR0003",
+      "ErrorText": "Header TransactionDate must be equal to the current date, Please fix TransactionDate to be equal to the current date.",
+      "Transaction": "Submission"
+    },
+    {
+      "AdditionalReference": "47751531",
+      "AdditionalReferenceObjectName": "Claim",
+      "Reference": "47751531",
+      "ReferenceObjectName": "Claim",
+      "PropertyName": "TransferDestination",
+      "RuleCode": "VR0262",
+      "ErrorText": "Claim Encounter Transfer Destination value is required when EncounterStartType = 3 Transfer),  ",
+      "ObjectName": "Claim",
+      "Transaction": "Submission"
+    }
+  ]
+}
+API hit start Claim
+Json claim posted 27/12/2022 3:18:39 PM JSON :{"Submission":{"Header":{"SenderID":"GRP331","ReceiverID":"MOHAPTPA003","TransactionDate":"27/12/2022 15:09","RecordCount":"1","DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Claim":[{"ID":"405260","Type":"Submission","MemberID":"1234567","ProviderID":"GRP331","NationalIDNumber":"784-2015-3575821-9","Gender":"Female","DateOfBirth":"01/01/2001 00:00","Gross":"61.2","PatientShare":"0","Net":"61.2","Encounter":{"FacilityID":"7405","Type":"5","PatientID":"621840","Start":"26/12/2022 20:39","End":"26/12/2022 21:02","StartType":"1","EndType":"1"},"Diagnosis":[{"Type":"Principal","Code":"R50.9","DxInfo":[{"Type":"POA","Code": "N"}]}],"Activity":[{"ID":"1637723661","Start":"26/12/2022 20:41","Type":"8","Code":"17.25","Location":"","Quantity":"1","Net":"0.00","Clinician":"D21083","PriorAuthorizationID":"","PatientShare":"0.00"},{"ID":"1637751659","Start":"26/12/2022 22:55","Type":"3","Code":"85025","Location":"","Quantity":"1","Net":"61.20","Clinician":"D21083","PriorAuthorizationID":"","PatientShare":"0.00"}]}]}}
+Json claim response 27/12/2022 3:19:03 PM  :{
+  "StatusCode": 400,
+  "Message": "Error while validating entity",
+  "Success": false,
+  "UserMessage": "Error while validating entity,Please see the list of errors and fix them",
+  "Error": [
+    {
+      "AdditionalReference": "1637751659",
+      "AdditionalReferenceObjectName": "Activity",
+      "Reference": "405260",
+      "ReferenceObjectName": "Claim",
+      "PropertyName": "Start",
+      "RuleCode": "VR0014",
+      "ErrorText": "Activity Start must be more than or equal Encounter Start and less than or equal to Encounter End, Please make sure that Activity start >= Encounter.Start and <= Encounter.End",
+      "ObjectName": "Activity",
+      "Transaction": "Submission"
+    }
+  ]
+}
+API hit start Claim
+Json claim posted 27/12/2022 3:24:25 PM JSON :{"Submission":{"Header":{"SenderID":"GRP331","ReceiverID":"MOHAPTPA003","TransactionDate":"27/12/2022 15:09","RecordCount":"1","DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Claim":[{"ID":"405260","Type":"Submission","MemberID":"1234567","ProviderID":"GRP331","NationalIDNumber":"784-2015-3575821-9","Gender":"Female","DateOfBirth":"01/01/2001 00:00","Gross":"61.2","PatientShare":"0","Net":"61.2","Encounter":{"FacilityID":"7405","Type":"5","PatientID":"621840","Start":"26/12/2022 20:39","End":"26/12/2022 21:02","StartType":"1","EndType":"1"},"Diagnosis":[{"Type":"Principal","Code":"R50.9","DxInfo":[{"Type":"POA","Code": "N"}]}],"Activity":[{"ID":"1637723661","Start":"26/12/2022 20:41","Type":"8","Code":"17.25","Location":"","Quantity":"1","Net":"0.00","Clinician":"D21083","PriorAuthorizationID":"","PatientShare":"0.00"},{"ID":"1637751659","Start":"26/12/2022 22:55","Type":"3","Code":"85025","Location":"","Quantity":"1","Net":"61.20","Clinician":"D21083","PriorAuthorizationID":"","PatientShare":"0.00"}]}]}}
+Json claim response 27/12/2022 3:24:27 PM  :{
+  "StatusCode": 400,
+  "Message": "Error while validating entity",
+  "Success": false,
+  "UserMessage": "Error while validating entity,Please see the list of errors and fix them",
+  "Error": [
+    {
+      "AdditionalReference": "1637751659",
+      "AdditionalReferenceObjectName": "Activity",
+      "Reference": "405260",
+      "ReferenceObjectName": "Claim",
+      "PropertyName": "Start",
+      "RuleCode": "VR0014",
+      "ErrorText": "Activity Start must be more than or equal Encounter Start and less than or equal to Encounter End, Please make sure that Activity start >= Encounter.Start and <= Encounter.End",
+      "ObjectName": "Activity",
+      "Transaction": "Submission"
+    }
+  ]
+}
+API hit start Claim
+Json claim posted 27/12/2022 3:32:36 PM JSON :{"Submission":{"Header":{"SenderID":"GRP331","ReceiverID":"MOHAPTPA003","TransactionDate":"27/12/2022 15:09","RecordCount":"1","DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Claim":[{"ID":"405260","Type":"Submission","MemberID":"1234567","ProviderID":"GRP331","NationalIDNumber":"784-2015-3575821-9","Gender":"Female","DateOfBirth":"01/01/2001 00:00","Gross":"61.2","PatientShare":"0","Net":"61.2","Encounter":{"FacilityID":"7405","Type":"5","PatientID":"621840","Start":"26/12/2022 20:39","End":"26/12/2022 21:02","StartType":"1","EndType":"1"},"Diagnosis":[{"Type":"Principal","Code":"R50.9","DxInfo":[{"Type":"POA","Code": "N"}]}],"Activity":[{"ID":"1637723661","Start":"26/12/2022 20:41","Type":"8","Code":"17.25","Location":"","Quantity":"1","Net":"0.00","Clinician":"D21083","PriorAuthorizationID":"","PatientShare":"0.00"},{"ID":"1637751659","Start":"26/12/2022 22:55","Type":"3","Code":"85025","Location":"","Quantity":"1","Net":"61.20","Clinician":"D21083","PriorAuthorizationID":"","PatientShare":"0.00"}]}]}}
+Json claim response 27/12/2022 3:32:57 PM  :{
+  "StatusCode": 400,
+  "Message": "Error while validating entity",
+  "Success": false,
+  "UserMessage": "Error while validating entity,Please see the list of errors and fix them",
+  "Error": [
+    {
+      "AdditionalReference": "1637751659",
+      "AdditionalReferenceObjectName": "Activity",
+      "Reference": "405260",
+      "ReferenceObjectName": "Claim",
+      "PropertyName": "Start",
+      "RuleCode": "VR0014",
+      "ErrorText": "Activity Start must be more than or equal Encounter Start and less than or equal to Encounter End, Please make sure that Activity start >= Encounter.Start and <= Encounter.End",
+      "ObjectName": "Activity",
+      "Transaction": "Submission"
+    }
+  ]
+}
+Claim Error: The given key was not present in the dictionary.
+API hit start Claim
+Json claim posted 27/12/2022 3:35:36 PM JSON :{"Submission":{"Header":{"SenderID":"GRP331","ReceiverID":"MOHAPTPA003","TransactionDate":"27/12/2022 15:09","RecordCount":"1","DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Claim":[{"ID":"405260","Type":"Submission","MemberID":"1234567","ProviderID":"GRP331","NationalIDNumber":"784-2015-3575821-9","Gender":"Female","DateOfBirth":"01/01/2001 00:00","Gross":"61.2","PatientShare":"0","Net":"61.2","Encounter":{"FacilityID":"7405","Type":"5","PatientID":"621840","Start":"26/12/2022 20:39","End":"26/12/2022 21:02","StartType":"1","EndType":"1"},"Diagnosis":[{"Type":"Principal","Code":"R50.9","DxInfo":[{"Type":"POA","Code": "N"}]}],"Activity":[{"ID":"1637723661","Start":"26/12/2022 20:41","Type":"8","Code":"17.25","Location":"","Quantity":"1","Net":"0.00","Clinician":"D21083","PriorAuthorizationID":"","PatientShare":"0.00"},{"ID":"1637751659","Start":"26/12/2022 22:55","Type":"3","Code":"85025","Location":"","Quantity":"1","Net":"61.20","Clinician":"D21083","PriorAuthorizationID":"","PatientShare":"0.00"}]}]}}
+Json claim response 27/12/2022 3:35:51 PM  :{
+  "StatusCode": 400,
+  "Message": "Error while validating entity",
+  "Success": false,
+  "UserMessage": "Error while validating entity,Please see the list of errors and fix them",
+  "Error": [
+    {
+      "AdditionalReference": "1637751659",
+      "AdditionalReferenceObjectName": "Activity",
+      "Reference": "405260",
+      "ReferenceObjectName": "Claim",
+      "PropertyName": "Start",
+      "RuleCode": "VR0014",
+      "ErrorText": "Activity Start must be more than or equal Encounter Start and less than or equal to Encounter End, Please make sure that Activity start >= Encounter.Start and <= Encounter.End",
+      "ObjectName": "Activity",
+      "Transaction": "Submission"
+    }
+  ]
+}
+Claim Error: The given key was not present in the dictionary.
+API hit start Claim
+Json claim posted 27/12/2022 3:38:02 PM JSON :{"Submission":{"Header":{"SenderID":"GRP331","ReceiverID":"MOHAPTPA003","TransactionDate":"27/12/2022 15:09","RecordCount":"1","DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Claim":[{"ID":"405260","Type":"Submission","MemberID":"1234567","ProviderID":"GRP331","NationalIDNumber":"784-2015-3575821-9","Gender":"Female","DateOfBirth":"01/01/2001 00:00","Gross":"61.2","PatientShare":"0","Net":"61.2","Encounter":{"FacilityID":"7405","Type":"5","PatientID":"621840","Start":"26/12/2022 20:39","End":"26/12/2022 21:02","StartType":"1","EndType":"1"},"Diagnosis":[{"Type":"Principal","Code":"R50.9","DxInfo":[{"Type":"POA","Code": "N"}]}],"Activity":[{"ID":"1637723661","Start":"26/12/2022 20:41","Type":"8","Code":"17.25","Location":"","Quantity":"1","Net":"0.00","Clinician":"D21083","PriorAuthorizationID":"","PatientShare":"0.00"},{"ID":"1637751659","Start":"26/12/2022 22:55","Type":"3","Code":"85025","Location":"","Quantity":"1","Net":"61.20","Clinician":"D21083","PriorAuthorizationID":"","PatientShare":"0.00"}]}]}}
+Json claim response 27/12/2022 3:38:16 PM  :{
+  "StatusCode": 400,
+  "Message": "Error while validating entity",
+  "Success": false,
+  "UserMessage": "Error while validating entity,Please see the list of errors and fix them",
+  "Error": [
+    {
+      "AdditionalReference": "1637751659",
+      "AdditionalReferenceObjectName": "Activity",
+      "Reference": "405260",
+      "ReferenceObjectName": "Claim",
+      "PropertyName": "Start",
+      "RuleCode": "VR0014",
+      "ErrorText": "Activity Start must be more than or equal Encounter Start and less than or equal to Encounter End, Please make sure that Activity start >= Encounter.Start and <= Encounter.End",
+      "ObjectName": "Activity",
+      "Transaction": "Submission"
+    }
+  ]
+}
+API hit start Claim
+Json claim posted 27/12/2022 3:49:31 PM JSON :{"Submission":{"Header":{"SenderID":"GRP331","ReceiverID":"MOHAPTPA003","TransactionDate":"27/12/2022 15:09","RecordCount":"1","DispositionFlag":"PRODUCTION","PayerID":"INS999"},"Claim":[{"ID":"405260","Type":"Submission","MemberID":"1234567","ProviderID":"GRP331","NationalIDNumber":"784-2015-3575821-9","Gender":"Female","DateOfBirth":"01/01/2001 00:00","Gross":"61.2","PatientShare":"0","Net":"61.2","Encounter":{"FacilityID":"7405","Type":"5","PatientID":"621840","Start":"26/12/2022 20:39","End":"26/12/2022 21:02","StartType":"1","EndType":"1"},"Diagnosis":[{"Type":"Principal","Code":"R50.9","DxInfo":[{"Type":"POA","Code": "N"}]}],"Activity":[{"ID":"1637723661","Start":"26/12/2022 20:41","Type":"8","Code":"17.25","Location":"","Quantity":"1","Net":"0.00","Clinician":"D21083","PriorAuthorizationID":"","PatientShare":"0.00"},{"ID":"1637751659","Start":"26/12/2022 22:55","Type":"3","Code":"85025","Location":"","Quantity":"1","Net":"61.20","Clinician":"D21083","PriorAuthorizationID":"","PatientShare":"0.00"}]}]}}
+Json claim response 27/12/2022 3:49:33 PM  :{
+  "StatusCode": 400,
+  "Message": "Error while validating entity",
+  "Success": false,
+  "UserMessage": "Error while validating entity,Please see the list of errors and fix them",
+  "Error": [
+    {
+      "AdditionalReference": "1637751659",
+      "AdditionalReferenceObjectName": "Activity",
+      "Reference": "405260",
+      "ReferenceObjectName": "Claim",
+      "PropertyName": "Start",
+      "RuleCode": "VR0014",
+      "ErrorText": "Activity Start must be more than or equal Encounter Start and less than or equal to Encounter End, Please make sure that Activity start >= Encounter.Start and <= Encounter.End",
+      "ObjectName": "Activity",
+      "Transaction": "Submission"
+    }
+  ]
+}
